@@ -18,5 +18,11 @@ namespace CIBuildProcess.Tests
             Assert.IsNotNull(result);
             Assert.IsInstanceOfType(result, typeof(ActionResult));
         }
+
+        [TestMethod]
+        public void FailingTest()
+        {
+            Assert.Fail("A Deliberately Failed Test");
+        }
     }
 }
