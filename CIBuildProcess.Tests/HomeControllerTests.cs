@@ -24,5 +24,29 @@ namespace CIBuildProcess.Tests
         {
             Assert.IsTrue(true,"A Deliberately Failed Test");
         }
+
+
+        [TestMethod]
+        public void ContactReturnsActionResult()
+        {
+            var controller = new HomeController();
+
+            var result = controller.Contact();
+
+            Assert.IsNotNull(result);
+            Assert.IsInstanceOfType(result, typeof(ActionResult));
+        }
+
+        [TestMethod]
+        public void IndexReturnsActionResult()
+        {
+            var controller = new HomeController();
+
+            var result = controller.Index();
+
+            Assert.IsNotNull(result);
+            Assert.IsInstanceOfType(result, typeof(ActionResult));
+        }
+
     }
 }
