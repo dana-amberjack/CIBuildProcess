@@ -22,7 +22,7 @@ namespace CIBuildProcess.Tests
         [TestMethod]
         public void FailingTest()
         {
-            Assert.IsTrue(true,"A Deliberately Failed Test");
+            Assert.IsFalse(true,"A Deliberately Failed Test");
         }
     }
 }
