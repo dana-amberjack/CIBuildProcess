@@ -1,8 +1,10 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Configuration;
 using System.Linq;
 using System.Web;
 using System.Web.Mvc;
+using CIBuildProcess.Models;
 
 namespace CIBuildProcess.Controllers
 {
@@ -10,7 +12,13 @@ namespace CIBuildProcess.Controllers
     {
         public ActionResult Index()
         {
-            return View();
+            var vm = new HomeViewModel
+                     {
+                         Environment = ConfigurationManager.AppSettings.Get("Environment"),
+                         AppVersion = ConfigurationManager.AppSettings.Get("AppVersion")
+                     };
+
+            return View(vm);
         }
 
         public ActionResult About()

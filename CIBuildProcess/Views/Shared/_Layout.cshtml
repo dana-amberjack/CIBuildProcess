@@ -1,4 +1,5 @@
-﻿<!DOCTYPE html>
+﻿@using System.Configuration
+<!DOCTYPE html>
 <html>
 <head>
     <meta charset="utf-8" />
@@ -31,7 +32,7 @@
         @RenderBody()
         <hr />
         <footer>
-            <p>Version 1.0.2 : &copy; @DateTime.Now.Year - Amberjack Ltd.</p>
+            <p>&copy; @DateTime.Now.Year - Amberjack Ltd. - V @ConfigurationManager.AppSettings.Get("AppVersion") : [@ConfigurationManager.AppSettings.Get("Environment")]</p>
         </footer>
     </div>
 
