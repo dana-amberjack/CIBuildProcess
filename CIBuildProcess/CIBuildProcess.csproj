@@ -27,6 +27,7 @@
     <NuGetPackageImportStamp>
     </NuGetPackageImportStamp>
     <TypeScriptToolsVersion>Latest</TypeScriptToolsVersion>
+    <TypeScriptCompileBlocked>True</TypeScriptCompileBlocked>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -208,14 +209,6 @@
     <None Include="packages.config" />
     <Content Include="Scripts\jquery-3.3.1.slim.min.map" />
     <Content Include="Scripts\jquery-3.3.1.min.map" />
-  </ItemGroup>
-  <ItemGroup>
-    <TypeScriptCompile Include="_script\App\modules\app.modules.a.one.ts" />
-    <TypeScriptCompile Include="_script\App\modules\app.modules.a.two.ts" />
-    <TypeScriptCompile Include="_script\App\modules\app.modules.b.one.ts" />
-    <TypeScriptCompile Include="_script\App\modules\app.modules.b.two.ts" />
-    <TypeScriptCompile Include="_script\App\pages\app.pages.one.ts" />
-    <TypeScriptCompile Include="_script\App\pages\app.pages.two.ts" />
   </ItemGroup>
   <ItemGroup>
     <Service Include="{4A0DDDB5-7A95-4FBF-97CC-616D07737A77}" />
