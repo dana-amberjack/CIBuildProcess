@@ -1,0 +1,26 @@
+﻿[
+  {
+    "outputFileName": "Scripts/app.one.js",
+    "inputFiles": [
+      "_script/app/pages/app.pages.one.js"
+    ]
+  },
+  {
+    "outputFileName": "Scripts/app.two.js",
+    "inputFiles": [
+      "_script/app/pages/app.pages.two.js"
+    ]
+  },
+  {
+    "outputFileName": "Scripts/Module.a.js",
+    "inputFiles": [
+      "_script/app/modules/app.modules.b.*.js"
+    ]
+  },
+  {
+    "outputFileName": "Scripts/Module.b.js",
+    "inputFiles": [
+      "_script/app/modules/app.modules.b.*.js"
+    ]
+  }
+]

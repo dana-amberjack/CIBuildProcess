@@ -259,3 +259,7 @@ paket-files/
 # Python Tools for Visual Studio (PTVS)
 __pycache__/
 *.pyc
+*.map
+/CIBuildProcess/_script/**/*.js
+/CIBuildProcess/Scripts/app.*.js
+/CIBuildProcess/Scripts/Module.*.js
