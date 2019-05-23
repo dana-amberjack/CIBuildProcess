@@ -54,7 +54,7 @@ gulp.task("clean:js", () => {
     return del(files.concat(minFiles));
 });
 
-gulp.task("clean:all", gulp.parallel("clean:ts", "clean:js", "clean:less"));
+gulp.task("clean:all", gulp.series("clean:ts", "clean:js", "clean:less"));
 
 
 //###########################
@@ -82,8 +82,8 @@ gulp.task("build:ts", () => {
 
 gulp.task("build:less", () => {
 
-    var list = glob.sync("_style/**/*.less");
-    console.log(list);
+    //var list = glob.sync("_style/**/*.less");
+    //console.log(list);
 
     return gulp.src("_style/**/*.less")
         .pipe(less({
@@ -92,7 +92,7 @@ gulp.task("build:less", () => {
         .pipe(gulp.dest("_style"));
 });
 
-gulp.task("build:all", gulp.parallel("build:ts", "build:less"));
+gulp.task("build:all", gulp.series("build:ts", "build:less"));
 
 //############
 //# Bundling #
@@ -108,7 +108,7 @@ gulp.task("bundle:js", () => {
             .pipe(gulp.dest("."));
     });
 
-    console.log(buns);
+    //console.log(buns);
 
     return merge(tasks);
 });
@@ -124,12 +124,12 @@ gulp.task("min:js", () => {
             .pipe(gulp.dest("."));
     });
 
-    console.log(buns);
+    //console.log(buns);
 
     return merge(tasks);
 });
 
-gulp.task("bundle:min:js", gulp.parallel("bundle:js", "min:js"));
+gulp.task("bundle:min:js", gulp.series("bundle:js", "min:js"));
 
 
 gulp.task("bundle:css", () => {
@@ -142,7 +142,7 @@ gulp.task("bundle:css", () => {
             .pipe(gulp.dest("."));
     });
 
-    console.log(buns);
+    //console.log(buns);
 
     return merge(tasks);
 });
@@ -158,14 +158,16 @@ gulp.task("min:css", () => {
             .pipe(gulp.dest("."));
     });
 
-    console.log(buns);
+    //console.log(buns);
 
     return merge(tasks);
 });
 
-gulp.task("bundle:min:css", gulp.parallel("bundle:css", "min:css"));
+gulp.task("bundle:min:css", gulp.series("bundle:css", "min:css"));
 
-gulp.task("bundle:all", gulp.parallel("bundle:min:css", "bundle:min:js"));
+gulp.task("bundle:all", gulp.series("bundle:min:css", "bundle:min:js"));
+
+gulp.task("cibuild", gulp.series("clean:all", "build:all", "bundle:all"));
 
 //###############
 //# Watch Tasks #
