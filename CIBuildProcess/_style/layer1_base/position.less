@@ -1,0 +1,79 @@
+﻿.pos-tl {
+    position: absolute !important;
+    top: 0;
+    left: 0;
+    backface-visibility: hidden; /*for android internet browser this fixes absolute positioned elements doing wacky things*/
+}
+
+.pos-tr {
+    position: absolute !important;
+    top: 0;
+    right: 0;
+    backface-visibility: hidden; /*for android internet browser this fixes absolute positioned elements doing wacky things*/
+}
+
+.pos-bl {
+    position: absolute !important;
+    bottom: 0;
+    left: 0;
+    backface-visibility: hidden; /*for android internet browser this fixes absolute positioned elements doing wacky things*/
+}
+
+.pos-br {
+    position: absolute !important;
+    bottom: 0;
+    right: 0;
+    backface-visibility: hidden; /*for android internet browser this fixes absolute positioned elements doing wacky things*/
+}
+
+.pos-abs {
+    position: absolute !important;
+    backface-visibility: hidden; /*for android internet browser this fixes absolute positioned elements doing wacky things*/
+}
+
+.pos-rel {
+    position: relative !important;
+}
+
+.pos-top-100 {
+    .pos-top(100);
+}
+
+.pos-top-200 {
+    .pos-top(200);
+}
+
+.pos-top(@px)
+{
+    position: absolute !important;
+    top: unit(@px, px);
+    backface-visibility: hidden; /*for android internet browser this fixes absolute positioned elements doing wacky things*/
+}
+
+.pos-left-50 {
+    position: absolute !important;
+    left: 50%;
+    backface-visibility: hidden; /*for android internet browser this fixes absolute positioned elements doing wacky things*/
+}
+
+.pos-right-50 {
+    position: absolute !important;
+    right: 50%;
+    backface-visibility: hidden; /*for android internet browser this fixes absolute positioned elements doing wacky things*/
+}
+
+.pos-centre {
+    margin: 0 auto;
+}
+
+.dis-bl {
+    display: block;
+}
+
+.dis-ilb {
+    display: inline-block;
+}
+
+.dis-inl {
+    display: inline;
+}

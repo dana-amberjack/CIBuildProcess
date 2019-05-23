@@ -1,0 +1,45 @@
+﻿@import "../_lesshelpers/__imports.less";
+
+.throb-to {
+    box-shadow: red 0 0 3px 3px;
+    color: red;
+}
+
+.throb {
+    .throb()
+}
+
+@-moz-keyframes throb-anim {
+
+    from {
+    }
+
+    to {
+        .throb-to();
+    }
+}
+
+@-webkit-keyframes throb-anim {
+
+    from {
+    }
+
+    to {
+        .throb-to();
+    }
+}
+
+@keyframes throb-anim {
+
+    from {
+    }
+
+    to {
+        .throb-to();
+    }
+}
+
+
+@keyframes spinner {
+  to {transform: rotate(360deg);}
+}

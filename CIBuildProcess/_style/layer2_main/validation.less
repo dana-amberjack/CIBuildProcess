@@ -1,0 +1,67 @@
+﻿@import "../_lesshelpers/__imports.less";
+
+.validation-summary-errors, .validation-summary-warnings {
+    color: @aj-red-bright;
+    border: 3px @aj-red-bright solid;
+    margin: 20px 0 20px 0;
+    border-radius: 12px;
+    background-color: white;
+    padding: 20px 20px 0 20px;
+
+    &.custom {
+        padding: 0 20px 0 20px;
+    }
+
+    .title {
+          margin-left: 0px;
+          border: 1px @aj-red-bright solid;
+          position: relative;
+          top: -15px;
+          background-color: @aj-red-bright;
+          color: white;
+          border-radius: 8px;
+          padding: 5px;
+          display: inline-block;
+    }
+
+    ul {
+
+        margin: 0;
+        margin-top: -10px;
+        margin-left: 20px;
+
+        li {
+            padding-bottom: 10px;
+            font-size: 0.8em;
+            list-style: disc;
+        }
+    }
+
+    span {
+        padding-left: 10px;
+    }
+}
+
+.validation-summary-warnings {
+    color: @aj-amber;
+    border: 3px @aj-amber solid;
+
+    .title {
+          border: 1px @aj-amber solid;
+          background-color: @aj-amber;
+    }
+
+    .warning-override {
+        padding-left: 20px;
+        margin-bottom: 10px;
+
+        div, span {
+            display: inline-block;
+        }
+
+        span {
+            color: @aj-font;
+            font-size: 0.8em;
+        }
+    }
+}

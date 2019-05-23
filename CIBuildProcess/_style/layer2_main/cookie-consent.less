@@ -1,0 +1,27 @@
+﻿@import "../_lesshelpers/__imports.less";
+
+.cookie-consent {
+    position: fixed;
+    top: 0;
+    width: 50%;
+    left: 25%;
+    z-index: 9999;
+    .standard-border();
+    border-top: 0;
+    .standard-border-radius();
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+    .standard-box-shadow();
+    background-color: white;
+    padding: 20px;
+    max-height: 90vh;
+    overflow: auto;
+}
+
+@media screen and (max-width : unit(@responsive-layout-threshold-1, px)) {
+
+    .cookie-consent {
+        width: 90%;
+        left: 5%;
+    }
+}

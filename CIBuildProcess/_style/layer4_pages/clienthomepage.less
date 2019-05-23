@@ -1,0 +1,12 @@
+﻿@import "../_lesshelpers/__imports.less";
+
+@response-threshold: 800px;
+
+.client-homepage {
+    background-size: cover;
+    height: 100vh;
+
+    @media screen and (max-width: @response-threshold) {
+        height: auto;
+    }             
+}

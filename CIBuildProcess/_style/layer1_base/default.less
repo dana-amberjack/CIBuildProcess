@@ -1,0 +1,370 @@
+﻿@import "../_lesshelpers/__imports.less";
+
+@font-face {
+    font-family: panton;
+    src: url('/Content/Fonts/Panton-Regular.otf');
+}
+
+body {
+    width: 100%;
+    min-width: 320px;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    font-family: "panton", Trebuchet, sans-serif;
+    color: @aj-font;
+
+    .metadata-list {
+        border: 2px solid black;
+        border-radius: 10px;
+        padding: 5px;
+    }
+
+    .metadata-item {
+        border: 2px solid black;
+        border-radius: 10px;
+        margin-bottom: 2px;
+        padding: 5px;
+        background-color: aliceblue;
+    }
+
+    .metadata-item-name {
+        float: left;
+        width: 30%;
+    }
+
+    .metadata-item-option {
+        display: inline;
+    }
+
+    .metadata-item-order {
+        float: right;
+    }
+
+    .header .top-left-container .menu-container {
+        display: block;
+    }
+
+    .header {
+        position: fixed;
+        top: 0;
+        width: 100%;
+        z-index: 99;
+
+        .top-left-container, .top-right-container {
+            position: fixed;
+            top: 0;
+            z-index: 99;
+        }
+
+        .top-left-container {
+            width: 70%;
+            left: 0;
+
+            @media @tablet {
+                width: auto;
+            }
+
+            .header-left {
+                display: inline-block;
+
+                .left-title {
+                    display: block;
+                    margin-left: 10px;
+                    margin-bottom: 0;
+                    position: relative;
+                    top: -6px;
+                }
+            }
+        }
+
+        .top-right-container {
+            right: 0;
+
+            .welcome {
+                max-width: 180px;
+                display: inline-block;
+                padding: 5px;
+                font-size: 0.8rem;
+                color: @aj-purple;
+                background: white;
+                border: 1px solid @aj-purple;
+                border-top: 0;
+                border-right: 0;
+                border-bottom-left-radius: 10px;
+            }
+
+            .right-title {
+                float: right;
+                padding-right: 5px;
+                position: relative;
+                top: -2px;
+            }
+
+            .menu-top-right {
+                width: 200px;
+
+                ul li a {
+                    white-space: nowrap;
+                    overflow: hidden;
+                    text-overflow: ellipsis;
+                }
+            }
+        }
+    }
+
+    .logon-container {
+
+        .logon-logo {
+            margin: 0 auto;
+            font-size: 10rem;
+            background-color: @aj-purple;
+            color: white;
+            text-align: center;
+            width: 80%;
+            border-top-left-radius: 50px;
+            border-top-right-radius: 50px;
+            margin-top: 10vh;
+
+            @media @desktop {
+                width: 60%;
+            }
+        }
+
+        form, .form {
+            width: 80%;
+            margin: 0 auto;
+
+            section, .section {
+                .standard-border();
+                border-radius: 50px;
+                border-top-right-radius: 0 !important;
+                border-top-left-radius: 0 !important;
+                .boxSizingBorderBox();
+                padding: 20px;
+                background-color: white;
+                text-align: center;
+            }
+
+            @media @desktop {
+                width: 60%;
+            }
+        }
+    }
+
+    .layout {
+
+        .client-background {
+            height: 100vh;
+            padding: 0 20px;
+            overflow: auto;
+
+            .page {
+                padding-top: 80px;
+                margin-bottom: 50px;
+
+                .content {
+                    margin: 0 auto;
+                    width: 100%;
+                }
+            }
+        }
+    }
+}
+
+input, select, textarea {
+    padding: 3px;
+    box-sizing: border-box;
+    border: 1px solid @aj-purple;
+    border-radius: 3px;
+
+    &:focus {
+        background-color: lighten(@aj-purple, 70%);
+    }
+}
+
+input {
+    display: block;
+    width: 100%;
+    height: 30px;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+label {
+    display: block;
+    padding-bottom: 4px;
+    font-size: 16px;
+    font-size: 1rem;
+}
+
+.clear {
+    clear: both;
+}
+
+.hidden {
+    display: none;
+}
+
+.ellipsis {
+    -ms-text-overflow: ellipsis;
+    -o-text-overflow: ellipsis;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+.fl {
+    float: left;
+}
+
+.fr {
+    float: right;
+}
+
+.vc {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.w100 {
+    width: 100%;
+}
+
+textarea {
+    resize: none;
+
+    &:active, &:hover, &:focus {
+        outline: none;
+        color: @aj-font;
+    }
+}
+
+h1 {
+    font-size: 24px;
+    font-size: 1.5rem;
+}
+
+h2 {
+    font-size: 20px;
+    font-size: 1.25rem;
+}
+
+h3 {
+    font-size: 16px;
+    font-size: 1rem;
+    font-weight: normal;
+}
+
+h1, h2, h3, h4 {
+    color: @aj-purple;
+    text-transform: capitalize;
+
+    &.inverse {
+        color: white !important;
+    }
+}
+
+.link {
+    .theme-color();
+}
+
+.bold {
+    font-weight: bold;
+}
+
+.click {
+    cursor: pointer;
+}
+
+.underline {
+    text-decoration: underline;
+}
+
+.full-width {
+    width: 100%;
+}
+
+.four-fifth {
+    width: 80%;
+}
+
+.three-quarter {
+    width: 75%;
+}
+
+.two-third {
+    width: 66.66666%;
+}
+
+.three-fifth {
+    width: 60%;
+}
+
+.half {
+    width: 50%;
+}
+
+.two-fifth {
+    width: 40%;
+}
+
+.third {
+    width: 33.33333%;
+}
+
+.quarter {
+    width: 25%;
+}
+
+.fifth {
+    width: 20%;
+}
+
+.disabled {
+    color: @aj-grey-mid;
+}
+
+.draggable {
+    cursor: move;
+}
+
+.toggler {
+
+    &:before {
+        content: "\f078";
+        font-family: 'FontAwesome';
+        font-weight: bold;
+        float: right;
+        color: @aj-purple;
+        padding-left: 5px;
+    }
+
+    &.toggled:before {
+        content: "\f077";
+    }
+}
+
+
+.fc-scheduled-activity {
+    z-index: 9;
+    position: absolute;
+    top: 15px;
+    right: 15px;
+
+    &:hover {
+        cursor: pointer !important;
+    }
+}
+
+.advice-label {
+    display: inline-block;
+    width: 15%;
+    padding: 8px 0;
+    font-size: 16px;
+    font-size: 1rem;
+    font-weight: bold;
+    color: @aj-purple;
+}

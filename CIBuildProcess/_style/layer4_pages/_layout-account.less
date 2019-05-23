@@ -1,0 +1,47 @@
+﻿@import "../_lesshelpers/__imports.less";
+
+.logon-container {
+
+    form {
+
+        section, .section {
+
+            .rows {
+                margin: 0 auto;
+                border: none;
+
+                @media @desktop {
+                    max-width: 500px;
+                }
+
+                .row {
+                    border: none;
+
+                    &.note {
+                        font-size: 14px;
+                        font-size: 0.875rem;
+                    }
+
+                    label {
+                        font-weight: bold;
+                    }
+                }
+            }
+        }
+
+        .forgotten-password-section {
+
+            .forgotten-password {
+
+                label {
+                    line-height: normal;
+                }
+
+                input {
+                    width: 100%;
+                    margin-bottom: 10px;
+                }
+            }
+        }
+    }
+}

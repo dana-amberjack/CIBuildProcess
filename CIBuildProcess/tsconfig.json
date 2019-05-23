@@ -6,8 +6,14 @@
     "sourceMap": true,
     "target": "es5"
   },
+  "files": [
+    "_script\\app\\modules\\app.modules.a.one2.ts"
+  ],
+
+  "include": [
+    "_script/**/*"
+  ],
   "exclude": [
-    "node_modules",
-    "wwwroot"
+    "node_modules"
   ]
 }

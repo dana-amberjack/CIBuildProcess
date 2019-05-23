@@ -1,0 +1,119 @@
+﻿@import "../_lesshelpers/__imports.less";
+
+.left-menu-container {
+    display: none;
+}
+
+.glimpse {
+    display: none;
+}
+
+.score-summary {
+
+    .radio-inline {
+        display: none;
+    }
+
+    .paginate_button.disabled {
+        display: none;
+    }
+
+    .dt-buttons {
+        display: none;
+    }
+
+    .dataTables_length {
+        display: none;
+    }
+
+    .dataTables_filter {
+        display: none;
+    }
+
+
+    tbody tr.odd {
+        background-color: #eeeeee !important;
+    }
+
+    table.dataTable thead .sorting {
+        background-image: url("/Content/Images/sort_both.png");
+    }
+
+    table.dataTable thead .sorting_asc {
+        display: none;
+    }
+
+    table.dataTable thead .sorting_desc {
+        display: none;
+    }
+
+    table.dataTable thead .sorting_asc_disabled {
+        display: none;
+    }
+
+    table.dataTable thead .sorting_desc_disabled {
+        display: none;
+    }
+
+    .radio-inline {
+        display: none;
+    }
+
+    .drilldown-container {
+        display: none;
+    }
+
+    .foot .actions {
+        position: fixed;
+        right: 0;
+        bottom: 0;
+        border-top-left-radius: 25px;
+        padding: 0 0 5px 5px;
+        background: white;
+        border-top: 3px solid @aj-purple;
+        border-left: 3px solid @aj-purple;
+        margin-bottom: 0;
+
+        ul li {
+            float: left;
+            margin-right: 5px;
+            padding-top: 5px;
+
+            .icon {
+                margin-right: 5px;
+            }
+        }
+    }
+
+    .refresh-notification {
+        position: absolute;
+        width: 300px;
+        left: ~"calc(50% - 150px)";
+        top: 20px;
+        background: white;
+        padding: 30px;
+        .standard-border();
+        .standard-border-radius;
+    }
+    //slider css
+    *, *:before, *:after {
+        box-sizing: border-box;
+    }
+
+    body {
+        font-family: sans-serif;
+        padding: 60px 20px;
+    }
+
+    @media (min-width: 600px) {
+        body {
+            padding: 60px;
+        }
+    }
+
+    .slider-container {
+        display: none;
+    }
+}
+
+

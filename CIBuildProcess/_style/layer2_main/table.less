@@ -1,0 +1,41 @@
+﻿@import "../_lesshelpers/__imports.less";
+
+table {
+    width: 100%;
+    .standard-border();
+    background-color: white;
+    border-collapse: collapse;
+
+    thead {
+        border: none;
+        tr{
+            border: none;
+            th {               
+                background-color: @aj-purple;
+                color: white;
+                padding: 5px;
+                border: none;
+            }
+        }
+    }
+
+    tbody {
+        border: none;
+        tr {
+            border: none;
+            td{
+                border: none;
+                padding: 3px;
+                text-align: center;
+
+                &:first-child {
+                    text-align: left;
+                }
+            }
+        }
+
+        tr:nth-child(even) {
+            background-color: @aj-grey-verylight;
+        }
+    }
+}

@@ -1,0 +1,19 @@
+﻿@import "../_lesshelpers/__imports.less";
+
+[data-tooltip] {
+    position: relative;
+}
+
+[data-tooltip]:hover:before {
+    content: attr(data-tooltip);
+    position: absolute;
+    top: 0;
+    background-color: @aj-straw;
+    color: @aj-grey-dark;
+    .standard-mid-border-colorOpt(@aj-grey-dark);
+    .borderRadius(10px);
+    padding: 5px;
+    text-align: center;
+    z-index: 9999;
+    font-size: 1rem;
+}

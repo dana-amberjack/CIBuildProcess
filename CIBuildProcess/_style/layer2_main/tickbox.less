@@ -1,0 +1,51 @@
+﻿@import "../_lesshelpers/__imports.less";
+
+.tickbox, .radiobox {
+    border: 3px @aj-grey-mid solid;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    line-height: 2rem;
+    background-color: @aj-grey-light;
+    margin-top: 2px;
+}
+
+.tickbox:hover, .radiobox:hover {
+    border: 3px @aj-purple solid;
+    cursor: pointer;
+}
+
+.tickbox.ticked .fa-check,
+.radiobox.ticked .fa-check {
+    color: @aj-green;
+}
+
+.tickbox.ticked .fa-times,
+.radiobox.ticked .fa-times {
+    color: @aj-red-bright;
+}
+
+.tickbox .fa, .radiobox .fa {
+    color: transparent;
+    margin-left: 2px;
+    margin-top: 3px;
+    font-size: 1.3rem;
+}
+
+.tickbox .fa:hover, .radiobox .fa:hover {
+    color: @aj-grey-mid;
+}
+
+.tickbox.ticked .fa-check:hover,
+.radiobox.ticked .fa-check:hover {
+    color: @aj-green;
+}
+
+.tickbox.ticked .fa-times:hover,
+.radiobox.ticked .fa-times:hover {
+    color: @aj-red-bright;
+}
+
+.tickbox-hidden {
+    display: none;
+}

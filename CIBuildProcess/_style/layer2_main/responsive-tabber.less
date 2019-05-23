@@ -1,0 +1,115 @@
+﻿@import "../_lesshelpers/__imports.less";
+
+.tabber.responsive-tabber {
+
+    li {
+        position: relative;
+
+        &.selected {
+        }
+
+        &:hover {
+        }
+
+        .notification-icon {
+            position: absolute;
+            right: 20px;
+            top: 5px;
+            font-size: 2rem;
+        }
+    }
+}
+
+.tabs.responsive-tabs {
+
+    .tab {
+    }
+}
+
+@media screen and (min-width: unit(@responsive-layout-threshold-1, px)) {
+
+    .tabber.responsive-tabber {
+        display: none;
+
+        li {
+
+            &.selected {
+            }
+
+            &:hover {
+            }
+
+            .notification-icon {
+                display: none;
+            }
+        }
+    }
+
+    .tabs.responsive-tabs {
+
+        .tab {
+        }
+    }
+}
+
+@media screen and (max-width: unit(@responsive-layout-threshold-1, px)) {
+
+    .tabber.responsive-tabber {
+        display: block;
+
+        li {
+            float: left;
+
+            &:hover {
+            }
+
+            .notification-icon {
+                display: none;
+            }
+
+            &.show-notification {
+
+                .notification-icon {
+                    display: block;
+                }
+            }
+
+            &.selected {
+
+                .notification-icon {
+                    display: none;
+                }
+            }
+        }
+    }
+
+    .tabs.responsive-tabs {
+
+        .tab {
+
+            &.cloakable {
+                display: none;
+                width: 100%;
+            }
+
+            &.uncloaked {
+                display: block;
+            }
+        }
+    }
+}
+
+.tabs.always-tabs {
+
+        .tab {
+
+            &.cloakable {
+                display: none;
+                width: 100%;
+            }
+
+            &.uncloaked {
+                display: block;
+            }
+        }
+    }

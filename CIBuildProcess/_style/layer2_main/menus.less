@@ -1,0 +1,95 @@
+﻿@import "../_lesshelpers/__imports.less";
+
+@menu-radius: 10px;
+
+.menu-container {
+    background-color: @aj-purple;
+
+    &.left {
+        border-bottom-right-radius: @menu-radius;
+        float: left;
+
+        .menu-opener {
+            border-bottom-right-radius: @menu-radius;
+        }
+    }
+
+    &.right {
+        border-bottom-left-radius: @menu-radius;
+        float: right;
+
+        .menu-opener {
+            border-bottom-left-radius: @menu-radius;
+        }
+    }
+
+    .menu-opener {
+        font-size: 1.4rem;
+        padding: 10px;
+        color: white;
+        min-width: 40px;
+        text-align: center;
+    }
+
+    .menu {
+        height: 385px;
+        overflow-y: auto;
+        .standard-border();
+        background-color: white;
+        color: @aj-purple;
+
+        &.menu-top-right {
+            border-bottom-left-radius: @menu-radius;
+        }
+
+        &.menu-top-left {
+            border-bottom-right-radius: @menu-radius;
+        }
+
+        ul {
+
+            li {
+                padding: 6px 12px;
+                border-bottom: 1px solid @aj-grey-light;
+                font-size: 16px;
+                font-size: 1rem;
+
+                &:last-child {
+                    border-bottom: none;
+                }
+
+                &:not(.no-hover):hover {
+                    background-color: @aj-purple;
+                    color: white;
+
+                    a {
+                        color: white !important;
+                    }
+                }
+
+                &.group {
+                    padding: 6px 8px;
+                    border-bottom: none;
+                    font-size: 18px;
+                    font-size: 1.125rem;
+                    font-weight: bold;
+                }
+
+                > a {
+                    display: block;
+                    width: 100%;
+                }
+
+                .sub-item-shower {
+
+                    .text {
+                        padding-left: 5px;
+                    }
+
+                    .sub-item {
+                    }
+                }
+            }
+        }
+    }
+}

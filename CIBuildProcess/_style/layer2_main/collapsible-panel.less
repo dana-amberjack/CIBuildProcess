@@ -1,0 +1,31 @@
+﻿@import "../_lesshelpers/__imports.less";
+
+.collapsible-panel {
+
+    .collapsible-header {
+        margin-bottom: 10px;
+        overflow: hidden;
+
+        &:hover {
+            cursor: pointer;
+        }
+
+        .collapsible-header-link {
+            margin-left: 5px;
+        }
+    }
+
+    .collapsible-title {
+
+        &:before {
+            /*content: '\002B';*/ /* Unicode character for "plus" sign (+) */
+            content: '\25BC'; /* Unicode character for "down" arrow (▼) */
+        }
+
+        &.active:before {
+            /*content: "\2212";*/ /* Unicode character for "minus" sign (-) */
+            content: '\25B2'; /* Unicode character for "up" arrow (▲) */
+        }
+    }
+}
+

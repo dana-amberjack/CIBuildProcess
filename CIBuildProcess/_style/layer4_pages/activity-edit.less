@@ -1,0 +1,201 @@
+﻿@import "../_lesshelpers/__imports.less";
+
+.assessor-requirement-section {
+    li.assessor-requirement {
+        position: relative;
+
+        .save {
+            color: red;
+        }
+
+        &:nth-child(2) {
+            border-top: 1px solid @aj-purple;
+            padding-top: 5px;
+            margin-top: 5px;
+        }
+
+        .cell {
+            display: inline-block;
+            margin: 10px 10px 0 0;
+        }
+
+        input.per-candidate {
+            width: 30px;
+        }
+
+        .is-dirty {
+            border: 1px solid red !important;
+
+            &:active, &:focus {
+                outline: none;
+            }
+        }
+    }
+
+    form:last-child {
+        margin-bottom: 0px;
+    }
+
+    .rules-dialog,
+    .metadata-dialog {
+        width: 100%;
+        position: absolute;
+        top: 50px !important;
+        margin-bottom: 100px;
+        z-index: 99;
+
+        .actions-header {
+            padding-bottom: 10px;
+            margin-bottom: 14px;
+            border-bottom: 1px solid @aj-purple;
+
+            .list-title {
+
+                span {
+                    width: 15%;
+                    margin-right: 6px;
+                    font-size: 14px;
+                    font-size: 0.875rem;
+                    line-height: normal;
+
+                    @media @tablet {
+                        font-size: 16px;
+                        font-size: 1rem;
+                    }
+                }
+            }
+        }
+
+        ul {
+
+            &.assessor-requirement-list {
+                margin-bottom: 40px;
+            }
+
+            &.rules {
+                margin-bottom: 40px;
+
+                li {
+                    height: 45px;
+                }
+            }
+
+            li {
+                margin-bottom: 20px;
+                border-bottom: 1px solid @aj-purple;
+
+                &:last-child {
+                    border: none;
+                }
+
+                span {
+                    width: 15%;
+                    margin-right: 6px;
+
+                    select {
+                        width: 100%;
+                        padding: 3px 0;
+                        font-size: 10px;
+                        font-size: 0.625rem;
+
+                        @media @tablet {
+                            font-size: 12px;
+                            font-size: 0.75rem;
+                        }
+                    }
+
+                    .tickbox {
+                        margin-left: 10px;
+                    }
+                }
+
+                .delete-rule {
+                    position: relative;
+                    bottom: 34px;
+                    line-height: normal;
+                    font-size: 32px;
+                    font-size: 2rem;
+
+                    @media @tablet {
+                        bottom: 0;
+                    }
+                }
+            }
+        }
+
+        .assessor-requirement-rule {
+            padding-bottom: 10px;
+        }
+
+        .add-rule,
+        .add-assessorRequirement {
+            position: absolute;
+            right: 10px;
+            bottom: 10px;
+            line-height: normal;
+        }
+    }
+
+    .metadata-dialog {
+
+        .assessor-requirement-metadata {
+            line-height: normal;
+
+            .metadata-heading {
+                border: none;
+
+                span {
+                    margin-bottom: 10px;
+                    font-size: 16px;
+                    font-size: 1rem;
+                    font-weight: bold;
+                }
+            }
+
+            .metadata-input-wrapper {
+                width: 100%;
+
+                @media @tablet {
+                    width: 50%;
+                }
+
+                .metadata-select {
+                    width: 70%;
+                    margin-bottom: 20px;
+
+                    @media @tablet {
+                        width: 80%;
+                    }
+
+                    select {
+                        width: 100%;
+                        height: 30px;
+                    }
+                }
+
+                .metadata-input {
+                    width: 100%;
+
+                    input {
+                        width: 70%;
+
+                        @media @tablet {
+                            width: 80%;
+                        }
+                    }
+                }
+            }
+
+            .delete-metadata {
+                position: relative;
+                bottom: 130px;
+                font-size: 32px;
+                font-size: 2rem;
+
+                @media @tablet {
+                    bottom: 60px;
+                }
+            }
+        }
+    }
+}

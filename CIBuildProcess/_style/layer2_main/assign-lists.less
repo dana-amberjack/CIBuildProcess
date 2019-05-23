@@ -1,0 +1,519 @@
+﻿@import "../_lesshelpers/__imports.less";
+
+@item-padding: 10px;
+
+.assign-assessors {
+
+    .available-list-container {
+
+       .available-list {
+
+           li {
+
+               &:after {
+                   bottom: 0 !important;
+               }
+           }
+        }
+    }
+}
+
+.assign-list {
+    float: left;
+    width: 100%;
+
+    .left {
+        width: 50%;
+        float: left;
+    }
+
+    .right {
+        width: 50%;
+        float: left;
+        padding-left: 10px;
+    }
+
+    .third {
+        width: 20%;
+        float: left;
+        padding-left: 30px;
+    }
+
+    .sticky-panel {
+
+        .actions {
+            margin-bottom: 10px;
+        }
+    }
+
+    .current-assessor-list,
+    .current-candidate-list {
+        height: 175px;
+        overflow: auto;
+    }
+
+    .available-list-container,
+    .current-list-container {
+
+        ul {
+            height: 390px;
+            padding: 2px 20px 2px 2px;
+            overflow: auto;
+        }
+    }
+
+    .assign-list-container {
+        padding: 15px;
+        margin-bottom: 10px;
+        .standard-border();
+        .standard-border-radius();
+        background-color: #fff;
+
+        .sticky-list {
+            height: 110px;
+            padding: 2px 20px 2px 2px;
+            overflow: auto;
+        }
+
+        .list-title {
+            margin-bottom: 10px;
+            font-size: 16px;
+            font-size: 1.125rem;
+            font-weight: bold;
+            color: @aj-purple;
+        }
+
+        ul {
+
+            li {
+                padding: @item-padding;
+                margin-bottom: 15px;
+                line-height: normal;
+                font-size: 14px;
+                font-size: 0.875rem;
+                background-color: white;
+                border: 2px solid @aj-purple;
+                border-radius: 10px;
+                cursor: move;
+
+                span, .label {
+                    display: block;
+                    padding-bottom: 4px;
+                }
+
+                .actions {
+                    float: right;
+                    margin: 5px;
+                }
+            }
+
+            &.available-activity-list {
+
+                li {
+
+                    &:after {
+                        float: right;
+                        position: relative;
+                        bottom: 16px;
+                        font-family: FontAwesome;
+                        content: "\f0b2";
+                    }
+                }
+            }
+
+            &.available-list,
+            &.current-list,
+            &.available-assessor-list,
+            &.available-candidate-list,
+            &.current-assessor-list,
+            &.current-candidate-list {
+
+                li {
+
+                    .fa {
+                        float: right;
+                        position: relative;
+                        bottom: 16px;
+                    }
+                }
+            }
+
+            &.available-assessor-list {
+
+                li {
+
+                    &:after {
+                        bottom: 0 !important;
+                    }
+                }
+            }
+
+            &.current-list {
+
+                .show-when-current {
+                    margin: 0;
+
+                    a {
+
+                        i {
+
+                            &:before {
+                                position: relative;
+                                top: 16px;
+                                right: 18px;
+                                font-size: 18px;
+                                font-size: 1.125rem;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        .footnote {
+            float: left;
+            width: 100%;
+            padding-top: 10px;
+            font-weight: bold;
+            text-align: center;
+        }
+
+        .show-when-current {
+            display: none;
+        }
+    }
+
+    .remove-list-container {
+        padding: 5px 15px;
+
+        .remove-list {
+            height: auto;
+        }
+    }
+
+    .calendar {
+        height: 340px !important;
+    }
+
+    .activity-list-container.edit-schedule,
+    .current-list-container.edit-schedule,
+    .available-list-container.edit-schedule {
+        height: 340px;
+        padding: 15px;
+        background: #fff;
+        border: 3px solid @aj-purple;
+        -webkit-border-radius: 20px;
+        -moz-border-radius: 20px;
+        border-radius: 20px;
+
+        ul {
+            height: 220px;
+            padding: 2px 20px 2px 2px;
+            overflow: auto;
+        }
+    }
+
+    .activity-list-container,
+    .current-list-container,
+    .remove-list-container,
+    .available-list-container,
+    .available-assessor-list-container,
+    .available-candidates-list-container {
+        float: left;
+        width: 100%;
+
+        .search {
+            float: left;
+            width: 100%;
+            border: none;
+
+            input {
+                float: left;
+                width: 85%;
+            }
+
+            i {
+                float: left;
+                position: relative;
+                margin-right: 15px;
+                top: 5px;
+                left: 4px;
+                font-size: 16px;
+                font-size: 1rem;
+                font-weight: bold;
+                color: @aj-purple;
+            }
+        }
+    }
+
+    .assign-left {
+        width: 40%;
+
+        @media @desktop {
+            width: 50%;
+        }
+
+        .available-list-container {
+            padding: 15px 8px !important;
+
+            @media @tablet {
+                padding: 15px !important;
+            }
+
+            i {
+                margin-right: 10px !important;
+            }
+
+            ul {
+                padding: 2px !important;
+
+                @media @tablet {
+                    padding: 2px 20px 2px 2px !important;
+                }
+            }
+        }
+    }
+
+    .assign-right {
+        width: 60%;
+
+        @media @desktop {
+            width: 50%;
+        }
+
+        .fc-content {
+            float: left;
+            width: 100%;
+            position: relative;
+
+            @media @tablet {
+                bottom: 6px;
+            }
+
+            .fc-time,
+            .fc-title {
+                float: left;
+                font-size: 10px !important;
+                font-size: 0.625rem !important;
+
+                @media @tablet {
+                    font-size: 12px !important;
+                    font-size: 0.75rem !important;
+                }
+            }
+
+            .fc-title {
+                width: 50%;
+                white-space: nowrap;
+                overflow: hidden;
+                text-overflow: ellipsis;
+            }
+        }
+
+        .fc-scheduled-activity {
+            top: 6px !important;
+
+            i {
+                font-size: 20px !important;
+                font-size: 1.25rem !important;
+            }
+        }
+
+        .remove-list-container {
+            width: 83%;
+            float: right;
+
+            @media @desktop {
+                width: 100%;
+            }
+        }
+    }
+
+    .available-assessor-list-container,
+    .available-candidates-list-container {
+
+        h3 {
+            margin-bottom: 5px !important;
+        }
+
+        .search {
+
+            input {
+                width: 80%;
+                padding: 3px 10px;
+            }
+        }
+
+        ul {
+
+            li {
+                padding: 5px;
+                margin-bottom: 8px;
+
+                @media @desktop {
+                    padding: 5px 10px;
+                }
+            }
+        }
+    }
+
+    .current-list-container {
+
+        .show-when-current {
+            display: block;
+        }
+
+        &.schedule-instance {
+            width: 50%;
+        }
+
+        .assign-list-item {
+            position: relative;
+
+            .fields {
+
+                .field {
+
+                    input {
+                        width: calc(100% ~"-" (@item-padding));
+                    }
+                }
+            }
+
+            .save-item-action {
+                display: none;
+                border: 3px solid red;
+                background: white;
+                border-radius: 50%;
+                cursor: pointer;
+                font-size: 2rem;
+                color: red;
+                margin: 0;
+                padding: 0;
+                position: absolute;
+                top: -20px;
+                right: -20px;
+                width: 45px;
+                height: 45px;
+                text-align: center;
+            }
+
+            &.isdirty {
+                .save-item-action {
+                    display: block;
+                }
+            }
+        }
+
+        .current-list {
+
+            span {
+
+                &:after {
+                    float: right;
+                    font-family: FontAwesome;
+                    font-size: 16px;
+                    font-size: 1rem;
+                    content: "\f0b2";
+                    font-weight: normal;
+                    color: @aj-font;
+                }
+            }
+        }
+    }
+
+    .remove-list-container {
+        position: relative;
+        text-align: center;
+
+        .remove-list {
+
+            &:before {
+                font-family: 'FontAwesome';
+                content: '\f014';
+                position: relative;
+                font-size: 60px;
+                font-size: 5rem;
+                color: @aj-purple;
+            }
+        }
+    }
+}
+
+.scheduled-activity-instance-create-group-module {
+    float: left;
+    width: 100%;
+
+    @media @desktop {
+        padding-left: 0;
+    }
+
+    .left {
+        width: 40%;
+    }
+
+    .third {
+        float: left;
+    }
+
+    .return-schedule {
+        position: fixed;
+        width: auto
+    }
+
+    .sticky-panel {
+        position: fixed;
+        width: 40%;
+        padding-right: 5px;
+        margin-top: 50px;
+
+        @media @desktop {
+            width: 32%;
+        }
+
+        @media @desktopLarge {
+            width: 33%;
+        }
+    }
+
+    .section {
+
+        label {
+            padding-top: 4px;
+        }
+
+        .assessor-candidate-select {
+            display: inline-block;
+            width: 100%;
+        }
+
+        .actions {
+            padding-top: 10px;
+        }
+    }
+
+    .current-list-container,
+    .assigned-candidates-list-container {
+        width: 100% !important;
+    }
+
+    .editable-lists {
+        float: right;
+        width: 56%;
+        padding: 0 15px 0 2px;
+    }
+}
+
+.edit-schedule .current-list {
+
+    li {
+
+        &:after {
+            float: right;
+            position: relative;
+            bottom: 16px;
+            font-family: FontAwesome;
+            content: "\f0b2";
+        }
+    }
+}

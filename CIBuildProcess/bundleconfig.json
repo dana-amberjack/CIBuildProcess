@@ -22,5 +22,82 @@
     "inputFiles": [
       "_script/app/modules/app.modules.b.*.js"
     ]
+  },
+
+  {
+    "outputFileName": "Content/Style/pages/_layout-admin.css",
+    "inputFiles": [ "_Style/layer4_pages/_layout-admin.css" ]
+  },
+  {
+    "outputFileName": "Content/Style/pages/_layout-client.css",
+    "inputFiles": [ "_Style/layer4_pages/_layout-client.css" ]
+  },
+  {
+    "outputFileName": "Content/Style/pages/_layout-portal.css",
+    "inputFiles": [ "_Style/layer4_pages/_layout-portal.css" ]
+  },
+  {
+    "outputFileName": "Content/Style/pages/_layout-public.css",
+    "inputFiles": [ "_Style/layer4_pages/_layout-public.css" ]
+  },
+  {
+    "outputFileName": "Content/Style/pages/_layout-assessor.css",
+    "inputFiles": [ "_Style/layer4_pages/_layout-assessor.css" ]
+  },
+  {
+    "outputFileName": "Content/Style/pages/_layout-facilitator.css",
+    "inputFiles": [ "_Style/layer4_pages/_layout-facilitator.css" ]
+  },
+  {
+    "outputFileName": "Content/Style/pages/_layout-candidate.css",
+    "inputFiles": [ "_Style/layer4_pages/_layout-candidate.css" ]
+  },
+  {
+    "outputFileName": "Content/Style/bundled.css",
+    "inputFiles": [ "_Style/bundled.css" ]
+  },
+  {
+    "outputFileName": "Content/Style/pages/clienthomepage.css",
+    "inputFiles": [ "_Style/layer4_pages/clienthomepage.css" ]
+  },
+  {
+    "outputFileName": "Content/Style/pages/assessor-activity.css",
+    "inputFiles": [ "_Style/layer4_pages/assessor-activity.css" ]
+  },
+  {
+    "outputFileName": "Content/Style/pages/rateit.css",
+    "inputFiles": [ "_Style/layer4_pages/rateit.css" ]
+  },
+  {
+    "outputFileName": "Content/Style/pages/_layout-account.css",
+    "inputFiles": [ "_Style/layer4_pages/_layout-account.css" ]
+  },
+  {
+    "outputFileName": "Content/Style/pages/assign-assessor.css",
+    "inputFiles": [ "_Style/layer4_pages/assign-assessor.css" ]
+  },
+  {
+    "outputFileName": "Content/Style/pages/assessor-schedule.css",
+    "inputFiles": [ "_Style/layer4_pages/assessor-schedule.css" ]
+  },
+  {
+    "outputFileName": "Content/Style/pages/score-summary.css",
+    "inputFiles": [ "_Style/layer4_pages/score-summary.css" ]
+  },
+  {
+    "outputFileName": "Content/Style/pages/score-summary-print.css",
+    "inputFiles": [ "_Style/layer4_pages/score-summary-print.css" ]
+  },
+  {
+    "outputFileName": "Content/Style/pages/activity-edit.css",
+    "inputFiles": [ "_Style/layer4_pages/activity-edit.css" ]
+  },
+  {
+    "outputFileName": "Content/Style/pages/candidate-activity.css",
+    "inputFiles": [ "_Style/layer4_pages/candidate-activity.css" ]
+  },
+  {
+    "outputFileName": "Content/Style/pages/user-list.css",
+    "inputFiles": [ "_Style/layer4_pages/user-list.css" ]
   }
 ]

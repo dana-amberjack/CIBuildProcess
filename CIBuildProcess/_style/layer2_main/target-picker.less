@@ -1,0 +1,22 @@
+﻿.hub-targets {
+
+    .hub-target {
+
+        &.selected {
+            color: red;
+        }
+
+        &:before {
+            content: " ";
+            background-color: red;
+            width: 20px;
+            height: 20px;
+            border-radius: 50%;
+            display: inline-block;
+        }
+
+        &.online:before {
+            background-color: green;
+        }
+    }
+}

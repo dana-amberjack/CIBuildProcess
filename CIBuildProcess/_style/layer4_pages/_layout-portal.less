@@ -1,0 +1,168 @@
+﻿@import "../_lesshelpers/__imports.less";
+
+body .layout-portal {
+    //calendar
+    .fc-highlight {
+        opacity: .5;
+    }
+
+    .calendar {
+        margin-bottom: 20px;
+        overflow: hidden;
+        border: 3px solid @aj-purple;
+        border-radius: 20px;
+
+        table {
+            border: none;
+        }
+
+        .fc-event {
+            padding: 5px;
+            margin-bottom: 0px;
+            background-color: @aj-purple;
+            border: 1px solid #fff;
+            -moz-border-radius: 10px;
+            -webkit-border-radius: 10px;
+            border-radius: 10px;
+            color: #fff;
+            cursor: move;
+
+            @media @tablet {
+                padding: 10px;
+            }
+
+            .fc-title {
+                font-size: 16px;
+                font-size: 1em;
+            }
+
+            .fc-time {
+                float: left
+            }
+
+            .fc-scheduled-activity {
+                top: 12px;
+
+                i {
+                    font-size: 24px;
+                    font-size: 1.5rem;
+                    color: #fff;
+                }
+            }
+        }
+    }
+    //end of calendar
+
+    .page {
+
+        .left-menu-container {
+            padding: 16px;
+            position: fixed;
+            .standard-border();
+            .standard-border-radius();
+            background-color: white;
+
+            ul {
+
+                li {
+                    background-color: @aj-purple;
+                    border-radius: 10px;
+                    .standard-border();
+
+                    &:first-child {
+                        margin-bottom: 16px;
+                    }
+
+                    a {
+                        padding: 10px;
+                        margin: 0 auto;
+                        display: block;
+                        color: white;
+                    }
+
+                    .icon {
+                        position: relative;
+                        top: 1px;
+                        padding-right: 8px;
+                        font-size: 16px;
+                        font-size: 1rem;
+                    }
+
+                    .label {
+                        font-size: 18px;
+                        font-size: 1.125rem;
+                    }
+                }
+            }
+        }
+
+        .content {
+            width: 100%;
+            margin: 0 auto;
+
+            .feedback {
+                .import-warn {
+                    color: @aj-amber;
+                }
+            }
+        }
+
+        .resource-list {
+
+            i {
+                font-size: 30px;
+                font-size: 1.875rem;
+            }
+        }
+    }
+
+    .page {
+
+        .left-menu-container {
+            display: none;
+        }
+    }
+
+    .sub-section {
+        padding: 15px;
+        background: #fff;
+        .standard-border();
+        .standard-border-radius();
+    }
+
+    @media @desktop {
+
+        .header .top-left-container .menu-container {
+            display: none;
+        }
+
+        .page {
+
+            &.responsive-menu {
+
+                .left-menu-container {
+                    display: block;
+                    width: 15%;
+                    float: left;
+                }
+
+                .content {
+                    width: 83%;
+                    float: right;
+
+                    .section {
+                        margin: 0;
+                        width: 100%;
+
+                        .section-header-wrapper {
+                            padding: 15px;
+                            background: #fff;
+                            border: 3px solid @aj-purple;
+                            border-radius: 20px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

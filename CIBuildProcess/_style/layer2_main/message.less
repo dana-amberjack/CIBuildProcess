@@ -1,0 +1,126 @@
+﻿@import "../_lesshelpers/__imports.less";
+
+.hub-message {
+
+    .msg-info-wrapper {
+        position: relative;
+        bottom: 6px;
+
+        .msg-attachement-icon {
+            padding-right: 4px;
+            font-size: 24px;
+            font-size: 1.5rem;
+        }
+
+        .msg-timestamp {
+            position: relative;
+            bottom: 2px;
+            font-size: 14px;
+            font-size: 0.875rem;
+        }
+    }
+
+    .msg-status-indicator {
+        position: relative;
+        bottom: 4px;
+        margin-right: 10px;
+        font-size: 24px;
+        font-size: 1.5rem;
+    }
+
+    .message-subject {
+        display: block;
+        clear: both;
+        padding-bottom: 5px;
+        line-height: 1.5rem;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        font-size: 16px;
+        font-size: 1rem;
+        font-weight: bold;
+        color: @aj-purple;
+
+        &.toggler:before {
+            position: relative;
+            float: left;
+            bottom: 2px;
+            padding: 0;
+            margin-right: 6px;
+            font-size: 24px;
+            font-size: 1.5rem;
+            font-weight: normal;
+        }
+    }
+
+    .message-text {
+        display: block;
+        font-style: italic;
+        border-top: 1px solid @aj-grey-light;
+        border-bottom: 1px solid @aj-grey-light;
+
+        p {
+            display: block;
+            padding: 8px 0;
+            margin: 0;
+        }
+    }
+
+    .source-message-text {
+        width: 80%;
+        float: right;
+        margin: 5px;
+        padding: 3px;
+        background-color: @aj-grey-verylight;
+        border: 1px solid @aj-purple;
+    }
+
+    .replies {
+        border-bottom: 1px solid @aj-grey-light;
+    }
+
+    .extras {
+        display: block;
+        padding-top: 2px;
+
+        .attachments, .links {
+            width: 49%;
+
+            .extras-list-title {
+                display: block;
+                padding: 8px 0;
+                font-size: 16px;
+                font-size: 1rem;
+                font-weight: bold;
+                color: @aj-purple;
+            }
+        }
+
+        .attachments, .links {
+            float: left;
+
+            .resource, .link {
+                float: left;
+                width: 100%;
+                margin-bottom: 10px;
+
+                .filename {
+                    white-space: nowrap;
+                    overflow: hidden;
+                    text-overflow: ellipsis;
+                }
+
+                .icon {
+                    float: left;
+                    margin-right: 5px;
+                    font-size: 24px;
+                    font-size: 1.5rem;
+                }
+            }
+        }
+
+        .links {
+            float: right;
+        }
+    }
+}

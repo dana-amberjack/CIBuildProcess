@@ -1,0 +1,54 @@
+﻿@import "../_lesshelpers/__imports.less";
+
+.help-container {
+    position: relative;
+    float: right;
+
+    .helpbox {
+        position: absolute;
+        float: right;
+        right: 0;
+        width: 0;
+        height: 0;
+        top: -2px;
+        z-index: 49;
+        color: @aj-purple;
+        border-color: @aj-purple;
+
+        &:after {
+            border: 1px solid;
+            font-family: FontAwesome;
+            content: "\f128";
+            position: relative;
+            right: 22px;
+            width: 15px;
+            height: 15px;
+            background-color: white;
+            border-radius: 50%;
+            display: inline-block;
+            line-height: 0.9rem;
+            padding-left: 2px;
+            box-sizing: border-box;
+            top: 3px;
+            font-size: 0.8rem;
+            background-color: white;
+            z-index: 49;
+            cursor: pointer;
+        }
+    }
+
+    .help-dialog {
+        border: 2px solid @aj-purple;
+        border-radius: 5px;
+        padding: 8px;
+        position: absolute;
+        background-color: white;
+        color: @aj-purple;
+        min-width: 200px;
+        right: 0px;
+        line-height: 1.2rem;
+        z-index: 999;
+        width: 70%;
+        word-break: break-word;
+    }
+}

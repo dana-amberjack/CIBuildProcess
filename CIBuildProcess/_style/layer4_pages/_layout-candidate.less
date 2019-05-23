@@ -1,0 +1,135 @@
+﻿@import "../_lesshelpers/__imports.less";
+
+body .layout-assessor .page {
+
+
+    .content {
+        width: 100%;
+    }
+}
+
+.candidate-root {
+
+    .message-list {
+
+        .attachments,
+        .links {
+
+            i {
+                top: 1px !important;
+            }
+        }
+
+        .link {
+
+            .remove-btn {
+                display: none;
+            }
+        }
+    }
+}
+
+body .layout-assessor {
+
+    .header {
+
+        .header-left {
+            display: inline-block;
+
+            .left-title {
+                display: block;
+                margin-left: 10px;
+                margin-bottom: 0;
+                position: relative;
+                top: -6px;
+            }
+        }
+
+        .right-title {
+            float: right;
+            padding-right: 5px;
+            position: relative;
+            top: -2px;
+        }
+    }
+
+    .logon-container {
+
+        form, .form {
+            .standard-border();
+            border-radius: 50px;
+            border-top-right-radius: 0;
+            border-top-left-radius: 0;
+            .boxSizingBorderBox();
+            padding: 20px;
+            background-color: white;
+            text-align: center;
+        }
+    }
+
+    .page {
+
+        .content {
+
+            .candidate-root.candidate-activity {
+
+                @media @desktopExtraLarge {
+                    margin: 0 auto;
+                    max-width: 80%;
+                }
+
+                .tab-container {
+                    width: 100%;
+                    padding: 10px 0;
+                    overflow: hidden;
+                    background: #fff;
+                    border: 3px solid #422562;
+                    border-radius: 20px;
+
+                    h3 {
+                        padding: 0 14px;
+                    }
+
+                    .candidate-Reply-root,
+                    .submit-document {
+                        padding: 10px 14px;
+
+                        label {
+                            margin-bottom: 10px;
+                        }
+
+                        .messages-activity-filter {
+                            margin-bottom: 10px;
+                        }
+                    }
+                }
+            }
+
+            .lobby-root {
+                float: left;
+                width: 100%;
+
+                @media @desktopExtraLarge {
+                    margin: 0 auto;
+                    max-width: 80%;
+                }
+
+                .list {
+                    float: left;
+                    width: 100%;
+
+                    .hubInactive, hubActive {
+
+                        p {
+                            line-height: 1.5em;
+                        }
+                    }
+
+                    #returnButton {
+                        float: left;
+                    }
+                }
+            }
+        }
+    }
+}

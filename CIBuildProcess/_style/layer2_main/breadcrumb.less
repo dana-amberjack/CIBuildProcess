@@ -1,0 +1,40 @@
+﻿@import "../_lesshelpers/__imports.less";
+
+.breadcrumb {
+    display: inline-block;
+    max-width: 80%;
+    padding: 5px 10px 5px 5px;
+    font-size: 12px;
+    font-size: 0.75rem;
+    line-height: 20px;
+    background: #fff;
+    border: 1px solid @aj-purple;
+    border-top: none;
+    border-bottom-right-radius: 10px;
+    color: @aj-purple;
+
+    @media @desktop {
+        width: auto;
+        border-left: 0;
+        border-bottom-left-radius: 0;
+    }
+
+    ul {
+
+        li {
+            float: left;
+            margin-left: 5px;
+
+            .page-title {
+                font-weight: bold;
+            }
+
+            &:first-of-type i:first-of-type {
+                font-size: 1.2rem;
+                line-height: 0.8rem;
+                position: relative;
+                top: 2px;
+            }
+        }
+    }
+}

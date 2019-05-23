@@ -263,3 +263,7 @@ __pycache__/
 /CIBuildProcess/_script/**/*.js
 /CIBuildProcess/Scripts/app.*.js
 /CIBuildProcess/Scripts/Module.*.js
+/CIBuildProcess/Content/Style/pages
+/CIBuildProcess/Content/Style
+/CIBuildProcess/_style/**/*.css
+/CIBuildProcess/bundled.css

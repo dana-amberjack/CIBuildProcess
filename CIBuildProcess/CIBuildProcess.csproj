@@ -141,6 +141,79 @@
     <Content Include="Content\bootstrap-theme.min.css" />
     <Content Include="Content\bootstrap.css" />
     <Content Include="Content\bootstrap.min.css" />
+    <Content Include="Content\Style\bundled.css" />
+    <Content Include="Content\Style\bundled.min.css">
+      <DependentUpon>bundled.css</DependentUpon>
+    </Content>
+    <Content Include="Content\Style\pages\activity-edit.css" />
+    <Content Include="Content\Style\pages\activity-edit.min.css">
+      <DependentUpon>activity-edit.css</DependentUpon>
+    </Content>
+    <Content Include="Content\Style\pages\assessor-activity.css" />
+    <Content Include="Content\Style\pages\assessor-activity.min.css">
+      <DependentUpon>assessor-activity.css</DependentUpon>
+    </Content>
+    <Content Include="Content\Style\pages\assessor-schedule.css" />
+    <Content Include="Content\Style\pages\assessor-schedule.min.css">
+      <DependentUpon>assessor-schedule.css</DependentUpon>
+    </Content>
+    <Content Include="Content\Style\pages\assign-assessor.css" />
+    <Content Include="Content\Style\pages\candidate-activity.css" />
+    <Content Include="Content\Style\pages\candidate-activity.min.css">
+      <DependentUpon>candidate-activity.css</DependentUpon>
+    </Content>
+    <Content Include="Content\Style\pages\clienthomepage.css" />
+    <Content Include="Content\Style\pages\clienthomepage.min.css">
+      <DependentUpon>clienthomepage.css</DependentUpon>
+    </Content>
+    <Content Include="Content\Style\pages\rateit.css" />
+    <Content Include="Content\Style\pages\rateit.min.css">
+      <DependentUpon>rateit.css</DependentUpon>
+    </Content>
+    <Content Include="Content\Style\pages\score-summary-print.css" />
+    <Content Include="Content\Style\pages\score-summary-print.min.css">
+      <DependentUpon>score-summary-print.css</DependentUpon>
+    </Content>
+    <Content Include="Content\Style\pages\score-summary.css" />
+    <Content Include="Content\Style\pages\score-summary.min.css">
+      <DependentUpon>score-summary.css</DependentUpon>
+    </Content>
+    <Content Include="Content\Style\pages\user-list.css" />
+    <Content Include="Content\Style\pages\user-list.min.css">
+      <DependentUpon>user-list.css</DependentUpon>
+    </Content>
+    <Content Include="Content\Style\pages\_layout-account.css" />
+    <Content Include="Content\Style\pages\_layout-account.min.css">
+      <DependentUpon>_layout-account.css</DependentUpon>
+    </Content>
+    <Content Include="Content\Style\pages\_layout-admin.css" />
+    <Content Include="Content\Style\pages\_layout-admin.min.css">
+      <DependentUpon>_layout-admin.css</DependentUpon>
+    </Content>
+    <Content Include="Content\Style\pages\_layout-assessor.css" />
+    <Content Include="Content\Style\pages\_layout-assessor.min.css">
+      <DependentUpon>_layout-assessor.css</DependentUpon>
+    </Content>
+    <Content Include="Content\Style\pages\_layout-candidate.css" />
+    <Content Include="Content\Style\pages\_layout-candidate.min.css">
+      <DependentUpon>_layout-candidate.css</DependentUpon>
+    </Content>
+    <Content Include="Content\Style\pages\_layout-client.css" />
+    <Content Include="Content\Style\pages\_layout-client.min.css">
+      <DependentUpon>_layout-client.css</DependentUpon>
+    </Content>
+    <Content Include="Content\Style\pages\_layout-facilitator.css" />
+    <Content Include="Content\Style\pages\_layout-facilitator.min.css">
+      <DependentUpon>_layout-facilitator.css</DependentUpon>
+    </Content>
+    <Content Include="Content\Style\pages\_layout-portal.css" />
+    <Content Include="Content\Style\pages\_layout-portal.min.css">
+      <DependentUpon>_layout-portal.css</DependentUpon>
+    </Content>
+    <Content Include="Content\Style\pages\_layout-public.css" />
+    <Content Include="Content\Style\pages\_layout-public.min.css">
+      <DependentUpon>_layout-public.css</DependentUpon>
+    </Content>
     <Content Include="favicon.ico" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
@@ -193,9 +266,72 @@
     <Content Include="Views\Home\Contact.cshtml" />
     <Content Include="Views\Home\Index.cshtml" />
     <Content Include="tsconfig.json" />
+    <Content Include="_style\bundled.less" />
+    <Content Include="_style\layer1_base\animations.less" />
+    <Content Include="_style\layer1_base\default.less" />
+    <Content Include="_style\layer1_base\margin.less" />
+    <Content Include="_style\layer1_base\padding.less" />
+    <Content Include="_style\layer1_base\position.less" />
+    <Content Include="_style\layer1_base\scrollbar.less" />
+    <Content Include="_style\layer1_base\_reset.less" />
+    <Content Include="_style\layer2_main\assign-lists.less" />
+    <Content Include="_style\layer2_main\avatar.less" />
+    <Content Include="_style\layer2_main\breadcrumb.less" />
+    <Content Include="_style\layer2_main\button.less" />
+    <Content Include="_style\layer2_main\buttons-datatables.less" />
+    <Content Include="_style\layer2_main\collapsible-panel.less" />
+    <Content Include="_style\layer2_main\cookie-consent.less" />
+    <Content Include="_style\layer2_main\datatables.less" />
+    <Content Include="_style\layer2_main\datepicker.less" />
+    <Content Include="_style\layer2_main\dialog.less" />
+    <Content Include="_style\layer2_main\form.less" />
+    <Content Include="_style\layer2_main\fullcalendar.less" />
+    <Content Include="_style\layer2_main\helpbox.less" />
+    <Content Include="_style\layer2_main\list.less" />
+    <Content Include="_style\layer2_main\loading-spinner.less" />
+    <Content Include="_style\layer2_main\media-picker.less" />
+    <Content Include="_style\layer2_main\menus.less" />
+    <Content Include="_style\layer2_main\message.less" />
+    <Content Include="_style\layer2_main\offline.less" />
+    <Content Include="_style\layer2_main\responsive-tabber.less" />
+    <Content Include="_style\layer2_main\search.less" />
+    <Content Include="_style\layer2_main\table.less" />
+    <Content Include="_style\layer2_main\target-picker.less" />
+    <Content Include="_style\layer2_main\textarea-for-on-screen-keyboard.less" />
+    <Content Include="_style\layer2_main\tickbox.less" />
+    <Content Include="_style\layer2_main\toastr.less" />
+    <Content Include="_style\layer2_main\tooltip.less" />
+    <Content Include="_style\layer2_main\validation.less" />
+    <Content Include="_style\layer2_main\_theme.less" />
+    <Content Include="_style\layer4_pages\activity-edit.less" />
+    <Content Include="_style\layer4_pages\assessor-activity.less" />
+    <Content Include="_style\layer4_pages\assessor-schedule.less" />
+    <Content Include="_style\layer4_pages\assign-assessor.less" />
+    <Content Include="_style\layer4_pages\candidate-activity.less" />
+    <Content Include="_style\layer4_pages\clienthomepage.css" />
+    <Content Include="_style\layer4_pages\clienthomepage.less" />
+    <Content Include="_style\layer4_pages\rateit.less" />
+    <Content Include="_style\layer4_pages\score-summary-print.less" />
+    <Content Include="_style\layer4_pages\score-summary.less" />
+    <Content Include="_style\layer4_pages\user-list.less" />
+    <Content Include="_style\layer4_pages\_layout-account.less" />
+    <Content Include="_style\layer4_pages\_layout-admin.less" />
+    <Content Include="_style\layer4_pages\_layout-assessor.less" />
+    <Content Include="_style\layer4_pages\_layout-candidate.less" />
+    <Content Include="_style\layer4_pages\_layout-client.less" />
+    <Content Include="_style\layer4_pages\_layout-facilitator.less" />
+    <Content Include="_style\layer4_pages\_layout-portal.less" />
+    <Content Include="_style\layer4_pages\_layout-public.less" />
+    <Content Include="_style\_lesshelpers\_animations.less" />
+    <Content Include="_style\_lesshelpers\_colours.less" />
+    <Content Include="_style\_lesshelpers\_constants.less" />
+    <Content Include="_style\_lesshelpers\_mixins.less" />
+    <Content Include="_style\_lesshelpers\_theme_mixins.less" />
+    <Content Include="_style\_lesshelpers\__imports.less" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
+    <Folder Include="_style\layer3_modules\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="fonts\glyphicons-halflings-regular.woff2" />
@@ -212,6 +348,15 @@
   </ItemGroup>
   <ItemGroup>
     <Service Include="{4A0DDDB5-7A95-4FBF-97CC-616D07737A77}" />
+  </ItemGroup>
+  <ItemGroup>
+    <TypeScriptCompile Include="_script\App\modules\ap.modules.a.three.ts" />
+    <TypeScriptCompile Include="_script\App\modules\app.modules.a.one.ts" />
+    <TypeScriptCompile Include="_script\App\modules\app.modules.a.two.ts" />
+    <TypeScriptCompile Include="_script\App\modules\app.modules.b.one.ts" />
+    <TypeScriptCompile Include="_script\App\modules\app.modules.b.two.ts" />
+    <TypeScriptCompile Include="_script\App\pages\app.pages.one.ts" />
+    <TypeScriptCompile Include="_script\App\pages\app.pages.two.ts" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

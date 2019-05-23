@@ -1,0 +1,179 @@
+﻿@import "../_lesshelpers/__imports.less";
+
+.btn {
+    border-radius: 20px;
+    color: white;
+    /*.theme-background-gradient();*/
+    background: @aj-purple;
+    border: 1px solid white;
+    padding: 8px 16px;
+    cursor: pointer;
+    font-weight: bold;
+    display: inline-block;
+    text-align: center;
+    user-select: none;
+
+    a:link, a:visited {
+        color: white;
+    }
+
+    &:hover {
+        /*.theme-background-gradient-highlight();*/
+    }
+
+    &:active, &:focus {
+        outline: none;
+    }
+
+    &.large {
+        font-size: 1.7rem;
+    }
+
+    &.inverse {
+        color: @aj-purple;
+        background: none;
+        .standard-border();
+        background-color: white;
+    }
+
+    &.btn-mini {
+        float: right;
+        .borderRadius(50%);
+        width: 30px;
+        height: 30px;
+        padding: 0;
+        font-size: 0.8rem;
+        margin-top: 2px;
+        margin-left: 5px;
+        padding-top: 2px;
+        border: 3px solid @aj-purple;
+
+        &.shower {
+            padding-top: 0px;
+        }
+
+        i {
+            position: relative;
+            bottom: 2px;
+
+            &.fa-cogs {
+                bottom: 0;
+            }
+        }
+    }
+}
+
+a.btn:link, a.btn:visited {
+    color: white;
+
+    &.inverse {
+        color: @aj-purple;
+    }
+}
+
+button.btn {
+    font-family: "panton", Trebuchet, sans-serif;
+    font: 1rem panton;
+    font-weight: bold;
+}
+
+.btn.hidden {
+    display: none;
+}
+
+.btn.send-message-action {
+    font-size: 18px;
+    font-size: 1.125rem;
+}
+
+.btns-container {
+    float: left;
+    width: 100%;
+
+    .attach-resource,
+    .add-link,
+    .add-message-template {
+        float: left;
+        display: inline-block;
+        height: 80px;
+        padding: 10px 0;
+        margin-right: 10px;
+        width: 70px;
+        margin-bottom: 10px;
+        border-radius: 10px;
+        color: #fff;
+        text-align: center;
+        cursor: pointer;
+
+        p {
+            padding: 5px;
+            margin: 0;
+            font-size: 12px;
+            font-size: 0.75rem;
+            font-weight: bold;
+        }
+    }
+}
+
+i {
+    font-size: 24px;
+    font-size: 1.5rem;
+}
+
+.dialog-screen-mask {
+
+    .actions {
+
+        .btn {
+
+            &.continue {
+                margin-right: 10px;
+            }
+
+            &.save-and-close {
+                margin-right: 10px;
+            }
+        }
+    }
+}
+
+.media-picker-header {
+
+    .action {
+        float: right;
+
+        .btn {
+            color: white;
+            margin-top: 4px;
+        }
+    }
+}
+
+.scheduled-activity-instance-create-group-module {
+
+    .actions {
+        padding: 0;
+        margin-bottom: 10px;
+
+        .btn {
+            padding: 8px 6px;
+            font-size: 14px;
+            font-size: 0.875rem;
+
+            @media @tablet {
+                padding: 8px 16px;
+                font-size: 16px;
+                font-size: 1rem;
+            }
+        }
+
+        .new-group-button {
+            display: inline-block;
+        }
+
+        .assign-assessor,
+        .copy-btn {
+            width: auto;
+        }
+    }
+}

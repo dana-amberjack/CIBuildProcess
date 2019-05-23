@@ -1,0 +1,49 @@
+﻿@import "../_lesshelpers/__imports.less";
+
+.media-picker-dialog {
+    position: fixed;
+    z-index: 99;
+    top: 10%;
+    left: 10%;
+    width: 80%;
+    height: 80vh;
+    .standard-border-radius();
+    .standard-border();
+    background-color: white;
+    box-shadow: white 0 0 10px 10px;
+    min-width: 325px;
+
+    .media-picker-header {
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
+
+        .title {
+            color: white;
+            float: left;
+            font-size: 2rem;
+            padding-left: 20px;
+        }
+    }
+
+    .media-list {
+        overflow: auto;
+        height: 88%;
+
+        .media-item {
+            height: 200px;
+            width: 300px;
+            float: left;
+            margin: 20px;
+            .standard-border-radius();
+            .standard-thin-border();
+            background-color: black;
+
+            img, video, audio {
+                width: 100%;
+                .standard-border-radius();
+                object-fit: contain;
+                max-height: 100%;
+            }
+        }
+    }
+}

@@ -1,0 +1,150 @@
+﻿@import "../_lesshelpers/__imports.less";
+
+form, .form {
+    margin-bottom: 10px;
+
+    &:nth-child(1) {
+        margin-top: 0;
+    }
+
+    &:last-child {
+        margin-bottom: 20px;
+    }
+
+    .section-header {
+
+        .section-title {
+            font-size: 20px;
+            font-size: 1.25rem;
+            color: @aj-purple;
+            font-weight: bold;
+        }
+    }
+
+    section, .section {
+        .standard-border();
+        .standard-border-radius();
+        .boxSizingBorderBox();
+        padding: 15px;
+        background-color: white;
+
+        .actions-row {
+            width: 100%;
+
+            ul {
+
+                li {
+                    float: left;
+                    margin: 5px 20px;
+                    padding: 10px;
+                    text-align: center;
+                    cursor: pointer;
+                    .standard-border();
+                    .standard-border-radius();
+                    .boxSizingBorderBox();
+
+                    &:first-child {
+                        margin-left: 0;
+                    }
+                }
+            }
+        }
+
+        .rows {
+            .row {
+                min-height: 45px;
+                line-height: 2;
+                border-bottom: 1px solid @aj-grey-light;
+
+                &:first-of-type {
+                    border-top: 1px solid @aj-purple;
+                    margin-top: 10px;
+                }
+
+                &:last-of-type {
+                    border-bottom: 1px solid @aj-purple;
+                }
+
+                .col {
+                    float: left;
+                    position: relative;
+
+                    input, select {
+                        width: ~"calc(100% - 10px)";
+                        float: left;
+                        margin-top: 6px;
+                    }
+
+                    input[type=color] {
+                        height: 15px;
+                    }
+
+                    input[type=file] {
+                        padding: 0 6px 0 0;
+                    }
+
+                    textarea {
+                        width: ~"calc(100% - 2px)";
+                        float: left;
+                        margin-top: 6px;
+                    }
+
+                    .short-field {
+                        width: ~"calc(100% - 100px)";
+                    }
+                }
+            }
+        }
+
+        &.ghost {
+            border: none;
+            padding: 0 0 20px 0;
+            margin-bottom: 0;
+            margin-top: 0;
+
+            .rows {
+                .row {
+                    border: none;
+                }
+            }
+        }
+    }
+
+    .actions {
+        padding-top: 10px;
+        min-height: 35px;
+        margin-bottom: 5px;
+
+        .left {
+            margin-left: 10px;
+
+            &:first-child {
+                margin-left: 0;
+            }
+        }
+
+        .right {
+            float: right;
+            margin-right: 10px;
+
+            &:last-child {
+                margin-right: 0;
+            }
+        }
+
+        .justify {
+            display: -webkit-box;
+            -webkit-box-pack: justify;
+            -webkit-box-align: center;
+            display: -moz-box;
+            -moz-box-pack: justify;
+            -moz-box-align: center;
+            display: -ms-flexbox;
+            -ms-flex-pack: justify;
+            -ms-flex-align: center;
+            display: box;
+            box-pack: justify;
+            box-align: center;
+        }
+    }
+}
