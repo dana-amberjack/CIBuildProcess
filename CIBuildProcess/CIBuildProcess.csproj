@@ -308,7 +308,6 @@
     <Content Include="_style\layer4_pages\assessor-schedule.less" />
     <Content Include="_style\layer4_pages\assign-assessor.less" />
     <Content Include="_style\layer4_pages\candidate-activity.less" />
-    <Content Include="_style\layer4_pages\clienthomepage.css" />
     <Content Include="_style\layer4_pages\clienthomepage.less" />
     <Content Include="_style\layer4_pages\rateit.less" />
     <Content Include="_style\layer4_pages\score-summary-print.less" />

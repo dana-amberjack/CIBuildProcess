@@ -92,6 +92,7 @@ gulp.task("build:less", () => {
         .pipe(gulp.dest("_style"));
 });
 
+gulp.task("build:all", gulp.parallel("build:ts", "build:less"));
 
 //############
 //# Bundling #
@@ -163,6 +164,8 @@ gulp.task("min:css", () => {
 });
 
 gulp.task("bundle:min:css", gulp.parallel("bundle:css", "min:css"));
+
+gulp.task("bundle:all", gulp.parallel("bundle:min:css", "bundle:min:js"));
 
 //###############
 //# Watch Tasks #
